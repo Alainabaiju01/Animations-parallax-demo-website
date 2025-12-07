@@ -40,11 +40,11 @@ function Hero() {
       </div>
        {/* Background Image with fixed size */}
       <div
-        className="absolute top-0 left-0"
+        className="md:w-1/2 absolute top-0 left-0"
         style={{
           marginLeft:"900px",
-          width: "800px",       // set specific width
-          height: "550px",      // set specific height
+          width: "700px",       // set specific width
+          height: "450px",      // set specific height
           backgroundImage: "url('./pic.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
