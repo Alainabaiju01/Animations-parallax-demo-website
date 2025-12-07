@@ -6,7 +6,7 @@ function Hero() {
   // Handle scroll movement
   useEffect(() => {
     const handleScroll = () => {
-      setOffsetX(window.scrollY * 0.15); // adjust speed
+      setOffsetX(window.scrollY * 0.3); // adjust speed
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,9 +28,8 @@ function Hero() {
               lineHeight: "1.3",
               fontWeight: "800",
               marginTop:"80px",
-              transform: `translateY(${offsetX * 0.4}px)`
-,
-          transition: "transform 0.005s ease-out",
+              transform: `translateY(${-offsetX}px)`,
+          transition: "transform 0.2s ease-out",
             }}
             className="text-white"
           >
@@ -41,13 +40,13 @@ function Hero() {
       </div>
        {/* Background Image with fixed size */}
        <div
-  className="absolute top-0 right-0 md:w-1/2 lg:w-[800px] h-[550px] md:h-[500px]"
+  className="absolute top-0 right-0 md:w-1/2 lg:w-[700px] h-[350px] md:h-[500px]"
   style={{
     backgroundImage: "url('/pic.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    transform: `translateY(${offsetX * 0.4}px)`,
-    transition: "transform 0.005s ease-out",
+    transform: `translateY(${offsetX}px)`,
+    transition: "transform 0.2s ease-out",
   }}
 ></div>
 
