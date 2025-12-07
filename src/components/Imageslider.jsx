@@ -27,7 +27,7 @@ const images = [
 
 function ImageSlider() {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <div className="p-4 ">
           <h1 className="m-4 p-4" >Our Destinations</h1>
           <p className="m-4 p-4">We craft tailor-made travel itineraries based on your preferences, 
